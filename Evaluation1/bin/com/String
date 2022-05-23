@@ -1,0 +1,21 @@
+1. Strings :-
+	
+	a)Strings are immutable because if the value is assigned once, you can't reassign the value again;
+	
+	Example : 
+		String str="masai school";
+
+2. String Builder :-
+	
+	a)String Builder are mutable because after assigning the value we can reassign the value;
+	
+	Example :
+		StringBuilder str= new StringBuilder("matai school");
+
+3. String class mathods :-
+	
+	a)str.charAt();
+	b)str.length();
+	c)str.toUpperCase();
+	d)str.toLowerCase();
+	e)str.trim();
