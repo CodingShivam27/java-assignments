@@ -1,0 +1,34 @@
+IS-A relationship :-
+
+	Is-A relationship is completely inheritance.
+	
+	Example :
+		
+		class Animal{
+		
+			properties of animals
+		
+		}
+		class Lion extends Animal{
+		
+			now all the properties of the animal will get inherited by Lion.
+		
+		}
+
+		
+Has-A relationship :-
+
+	a) Has-A relationship is a Composition.
+	b) By taking a example of kitchen we can't inherit a gas cylinder or refrigerator.
+	c) We need to reuse the code we will have to create things again.
+	
+
+Access modifiers :-
+
+	a)Access modifiers gives the accessibility or scope of a fields like constructors,methods.
+	
+	b)There are four typs of access modifiers :
+		1)public :access level is everywhere.
+		2)protected :within a package or in child package.
+		3)Default :within package.
+		4)private :within the class only.  
