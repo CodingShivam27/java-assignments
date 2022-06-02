@@ -1,0 +1,38 @@
+An interface can be used to define a contract behavior and it can also act as a contract between two systems to interact while an abstract class is mainly used to define default behavior for subclasses, it means that all child classes should have performed the same functionality.
+
+	When to use an abstract class:
+		1)An abstract class is a good choice if we are using the inheritance concept since it provides a common base class implementation to derived classes.
+		2)An abstract class is also good if we want to declare non-public members. In an interface, all methods must be public.
+		
+		Example :-
+		
+			abstract class Car {
+			   public void accelerate() {
+			      System.out.println("Do something to accelerate");
+			   }
+			   public void applyBrakes() {
+			      System.out.println("Do something to apply brakes");
+			   }
+			   public abstract void changeGears();
+			}
+			
+			
+	When to use an interface:
+		1)If the functionality we are creating will be useful across a wide range of disparate objects, use an interface. Abstract classes should be used primarily for objects that are closely related, whereas interfaces are best suited for providing a common functionality to unrelated classes.
+		2)Interfaces are a good choice when we think that the API will not change for a while.
+		
+		Example :-
+		
+			public interface Actor {
+			   void perform();
+			}
+			public interface Producer {
+			   void invest();
+			}
+		
+		Nowadays most of the actors are rich enough to produce their own movie. If we are using interfaces rather than abstract classes, we can implement both Actor and Producer. Also, we can define a new ActorProducer interface that extends both.
+		
+		public interface ActorProducer extends Actor, Producer{
+		   // some statements
+		}
+		
